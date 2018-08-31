@@ -5,13 +5,15 @@ public class FactorialIterative implements Factorial {
 		if (n>0)
 		{
 			int total = 1;
-			for (int i = n; i > 0; i++)
+			for (int i = n; i > 0; i--)
 			{
 				total *= i;
-				return total;
 				
 			}
+			
+			return total;
 		}
+		return 0;
 	}
 
 }
